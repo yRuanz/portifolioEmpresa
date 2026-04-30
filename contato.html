@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CONTATO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body class="fundo-faq">
+    <header>
+        <nav class="nav">
+            <a class="nav-link" href="/index.html">Link 1</a>
+            <a class="nav-link" href="/login.html">Login</a>
+            <a class="nav-link" href="/contato.html">FAQ</a>
+        </nav>
+    </header>
+    <main>
+        <h2>TELA CONTATO</h2>
+        <form class="bloco_contato" action="contato.php" method="post">
+            <div class="mb-3">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+            <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            </div>
+
+            <label for="assunto">Assunto:</label>
+            <select name="" id="assunto" class="form-control">
+                <option value="">Selecione um assunto</option>
+                <option value="assunto-1">Assunto 1</option>
+                <option value="assunto-2">Assunto 2</option>
+                <option value="assunto-3">Assunto 3</option>
+            </select>
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira sua mensagem..."></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
