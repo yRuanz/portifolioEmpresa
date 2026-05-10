@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Palette+Mosaic&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>Portifólio - NOME EMPRESA</title>
 </head>
-<body class="body-home">
+<body class="body_site">
   <header>
-    <nav class="navbar navbar-expand-lg nav">
+    <nav class="navbar navbar-expand-lg nav mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">Logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/login.html">Login</a>
+              <a class="nav-link" href="/login.html">FAQ</a>
             </li>        
             <li class="nav-item">
               <a class="nav-link" href="/contato.html">Contato</a>
@@ -29,39 +31,36 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Busque por ..." aria-label="Search"/>
-            <button class="btn btn-outline-info" type="submit">Pesquisar</button>
+            <button class="btn text-white" style="background-color: #003f69;" type="submit">Pesquisar</button>
           </form>
         </div>
       </div>
     </nav>  
   </header>
-  <main>
-    <div class="carrosel">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="6000">
-            <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=pexels-solliefoto-298863.jpg&fm=jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?cs=srgb&dl=pexels-pixabay-325876.jpg&fm=jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="https://media.istockphoto.com/id/655710954/photo/women-clothes-on-racks-in-a-boutique-store.jpg?s=170667a&w=0&k=20&c=gGc47Qu_V3SbJkX7nRcUkPcc5kgV1pqt9FZI4ZHFUjg=" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<main>
+  <div class="carousel-container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+
+    <div class="cards">
+      <label class="carousel-card" for="item-1">
+        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=pexels-solliefoto-298863.jpg&fm=jpg" alt="foto 1">
+      </label>
+      <label class="carousel-card" for="item-2">
+        <img src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?cs=srgb&dl=pexels-pixabay-325876.jpg&fm=jpg" alt="foto 2">
+      </label>
+      <label class="carousel-card" for="item-3">
+        <img src="https://media.istockphoto.com/id/655710954/photo/women-clothes-on-racks-in-a-boutique-store.jpg?s=170667a&w=0&k=20&c=gGc47Qu_V3SbJkX7nRcUkPcc5kgV1pqt9FZI4ZHFUjg=" alt="foto 3">
+      </label>
+    </div>
   </div>
-  <h2>NOME MARCA</h2>
-    <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, harum consectetur. <br>Error necessitatibus eum ratione rem molestias iste animi quo facilis omnis. <br>Dolorum quae debitis nihil exercitationem eos obcaecati voluptate?</q>
-  </main>
+
+  <h2 class="titulo_content text-center pb-5 frijole-regular">NIMBUS</h2>
+  <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, harum consectetur. <br>
+     Error necessitatibus eum ratione rem molestias iste animi quo facilis omnis. <br>
+     Dolorum quae debitis nihil exercitationem eos obcaecati voluptate?</q>
+</main>
     <footer>
         <ul>
           <p>© 2026 Portfólio de Startup,
@@ -71,3 +70,13 @@ Luis Henrick, Murilo Barbosa, Ruan Henrique, Viviane Gimenez</p>
     </footer>
 </body>
 </html> 
+
+  <!-- <div class="carousel-item active" data-bs-interval="6000">
+    <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=pexels-solliefoto-298863.jpg&fm=jpg" class="d-block" style="width: 900px; height: 400px; object-fit: cover;" alt="...">
+  </div>
+  <div class="carousel-item" data-bs-interval="6000">
+    <img src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?cs=srgb&dl=pexels-pixabay-325876.jpg&fm=jpg" class="d-block" style="width: 900px; height: 400px; object-fit: cover;" alt="...">
+  </div>
+  <div class="carousel-item" data-bs-interval="6000">
+    <img src="https://media.istockphoto.com/id/655710954/photo/women-clothes-on-racks-in-a-boutique-store.jpg?s=170667a&w=0&k=20&c=gGc47Qu_V3SbJkX7nRcUkPcc5kgV1pqt9FZI4ZHFUjg=" class="d-block" style="width: 900px; height: 400px; object-fit: cover;" alt="...">
+  </div> -->
